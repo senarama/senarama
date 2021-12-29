@@ -1,0 +1,99 @@
+$primary-color: rgb(7, 119, 98);
+$text-color: rgb(220, 220, 220);
+
+a.item_link, a.auth_btn, button, .title {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100vw;
+  color: $text-color;
+  background-color: $primary-color;
+  padding: 0;
+  margin: 0;
+
+  .container {
+    max-width: 99vw;
+    padding: .6rem;
+    margin: 0;
+  }
+
+  .logos {
+    img {
+      height: 2.8rem;
+    }
+  }
+
+  .title {
+    padding: 0 1rem;
+    h1 {
+      font-size: 1.2rem;
+      color: $text-color;
+    }
+  }
+  .menu {
+    .item_link {
+      padding: .5rem;
+      color: inherit;
+      margin: 0;
+    }
+    .item_btn {
+      width: fit-content;
+      padding: .5rem;
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .social_networks {
+      padding-left: 0.5rem;
+
+      img {
+        width: 2.5rem;
+        padding-right: .5rem;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: $primary-color !important;
+  box-shadow: 1px 1px 4px rgb(60, 60, 60);
+
+  .auth_btn {
+    background-color: transparent !important;
+  }
+}
+
+
+.auth {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .auth_btn {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  .auth_action {
+    padding: .5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    background-color: transparent;
+  }
+
+  .auth {
+    justify-content: right;
+    padding-right: 2rem;
+    .auth_btn {
+      background-color: rgb(226, 87, 0);
+    }
+  }
+}

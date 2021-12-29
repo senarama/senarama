@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  padding: 5rem .5rem 1rem;
+
+  h2 {
+    text-align: center;
+    color: rgb(30, 30, 30);
+  }
+  .form_des {
+    padding: 0 1rem 0.5rem;
+    color: rgb(70, 70, 70);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .wrapper {
+    padding: 0 1rem 1rem;
+
+    .form_group {
+      padding: 0.3rem 0;
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+
+      input:focus, select:focus, textarea:focus {
+        box-shadow: none;
+        border: 1px solid rgb(223, 63, 14);
+      }
+
+      input[type="radio"]:focus {
+        box-shadow: 1px 1px  5px rgb(9, 61, 231);
+        border: none;
+      }
+    }
+    
+    .group_social {
+      input {
+        margin: 0.7rem 0 0;
+      }
+
+      input[id="instagram"] {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.form_footer {
+  width: 100%;
+  text-align: center;
+  button {
+    width: 80%;
+  }
+}
+
+.terms {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  div {
+    margin: 0 auto;
+    width: max-content;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .content {
+    .wrapper {
+      padding: 0.3rem 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    flex-direction: row;
+    .wrapper {
+      width: calc(100% / 2.1);
+      padding: 2rem;
+    }
+  }
+
+  .container {
+    .form_des {
+      padding: 0.2rem 3rem;
+    }
+  }
+
+  .form_footer {
+    button {
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .content {
+    flex-direction: row;
+    .wrapper {
+      width: calc(100% / 2.3);
+      padding: 1rem 3rem;
+    }
+  }
+
+  .container {
+    .form_des {
+      padding: 0.2rem 8rem;
+    }
+  }
+  .form_footer {
+    button {
+      width: 60%;
+    }
+  }
+}

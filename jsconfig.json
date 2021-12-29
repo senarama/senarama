@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./",
+    "allowJs": true,
+    "paths": {
+      "@data/*": ["src/client/data/*"],
+      "@images/*": ["src/client/assets/images/*"],
+      "@icons/*": ["src/client/assets/icons/*"],
+      "@assets/*": ["src/client/assets/*"],
+      "@components/*": ["src/client/components/*"],
+      "@hooks/*": ["src/client/hooks/*"],
+      "@utils/*": ["src/client/utils/*"],
+      "@store/*": ["src/client/store/*"],
+      "@views/*": ["src/client/views/*"],
+    },
+  },
+  "exclude": ["node_modules/*", "dist/*"],
+  "typeAcquisition": {
+    "exclude": ["defer-to-connect"]
+  }
+}

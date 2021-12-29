@@ -1,0 +1,20 @@
+.footer {
+  align-items: center;
+  background-color: rgb(3, 131, 107);
+  display: flex;
+  justify-content: center;
+
+  .content {
+    color: rgb(233, 233, 233);
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-align: left;
+    p {
+      padding: .25rem;
+    }
+    p:last-child {
+      padding-top: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}

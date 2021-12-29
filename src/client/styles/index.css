@@ -1,0 +1,14 @@
+html, body, p, #root, main, h1, h2, h3, h4, div, nav, header, footer {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button, input {
+  outline: none;
+  border: none;
+}

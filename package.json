@@ -1,0 +1,93 @@
+{
+  "name": "frontent",
+  "description": "SENARAMA Frontent",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "email": "s3narama@gmail.com",
+    "name": "SENARAMA Team",
+    "url": "https://github.com/senarama"
+  },
+  "contributors": [
+    {
+      "name": "Devil64-Dev",
+      "url": "https://github.com/Devil64-Dev"
+    },
+    {
+      "name": "Danysnz0",
+      "url": "https://github.com/Danysnz0"
+    },
+    {
+      "name": "kathe0102",
+      "url": "https://github.com/kathe0102"
+    }
+  ],
+  "bugs": {
+    "email": "s3narama@gmail.com",
+    "url": "https://github.com/senarama/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senarama/senarama.git"
+  },
+  "homepage": "https://github.com/senarama/senarama",
+  "scripts": {
+    "build:client": "node ./scripts build:client",
+    "build:server": "node ./scripts build:server",
+    "build": "yarn build:client && yarn build:server",
+    "dev": "node ./scripts/ dev:client",
+    "dev:server": "node ./scripts dev:server",
+    "start": "node ./dist/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "babel-loader": "^8.2.3",
+    "chalk": "4.1.2",
+    "compression-webpack-plugin": "^9.2.0",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.3.1",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "nodemon": "^2.0.15",
+    "postcss": "^8.4.5",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.1.0",
+    "prop-types": "^15.8.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.4",
+    "react-dom": "^17.0.2",
+    "react-refresh": "^0.11.0",
+    "react-router-dom": "^6.2.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "source-map": "^0.7.3",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-dev-server": "^4.7.1",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.13.1",
+    "yarn": "3.1.1"
+  },
+  "packageManager": "yarn@3.1.1"
+}
